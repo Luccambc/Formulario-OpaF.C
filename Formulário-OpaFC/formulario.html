@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="formulario.css" rel="stylesheet">
+    <title>Formulário | Opa F.C</title>
+</head>
+
+<body>
+    <div class="caixa_principal">
+        <form action="">
+            <fieldset class="caixa_fieldset">
+                <legend class="nome_time"><strong>Formulário | Opa F.C</strong></legend>
+                <br>
+
+                <div class="inputs">
+                    <input type="text" name="nome" id="nome" class="input_user" required>
+                    <label for="nome" class="input_label">Nome Completo</label>
+                </div>
+                <br><br>
+                <div class="inputs">
+                    <input type="text" name="nome_camisa" id="nome_camisa" class="input_user" required>
+                    <label for="nome_camisa" class="input_label">Nome no Uniforne</label>
+                </div>
+                <br><br>
+                <div class="inputs">
+                    <input type="text" name="num_uniforme" id="num_uniforme" class="input_user" required>
+                    <label for="num_uniforme" class="input_label">Número no Uniforme</label>
+                </div>
+                <br><br>
+                <div class="inputs">
+                    <input type="text" name="tam_uniforme" id="tam_uniforme" class="input_user" required>
+                    <label for="tam_uniforme" class="input_label">Tamanho do Uniforme (P, M, G, GG)</label>
+                </div>
+                <br><br>
+                <div class="inputs">
+                    <input type="text" name="email" id="email" class="input_user" required>
+                    <label for="email" class="input_label">Email</label>
+                </div>
+                <br><br>
+                <div class="inputs">
+                    <input type="tel" name="telefone" id="telefone" class="input_user" required>
+                    <label for="telefone" class="input_label">Telefone</label>
+                </div>
+                <br>
+
+                <div class="genero_jogador">
+                    <p><strong>Qual o seu Sexo?</strong></p>
+                    <input type="radio" id="masculino" name="sexo" value="masculino" checked required>
+                    <label for="masculino">Masculino</label><br>
+                    <input type="radio" id="feminino" name="sexo" value="feminino" required>
+                    <label for="feminino">Feminino</label><br>
+                    <input type="radio" id="outro" name="sexo" value="outro" required>
+                    <label for="outro">Outro</label><br>
+                </div>
+                
+                <br>
+                <div class="data_nasc">
+                    <label for="nascimento"><strong>Data de nascimento:</strong></label>
+                    <input type="date" name="nascimento" id="nascimento" required>
+                </div>
+
+                <br><br>
+                <div class="posicao_jogador">
+                    <label for="posicao"><strong>Qual sua posição?</strong></label>
+                    <select id="posicao" required>
+                       <option selected disabled value="">Selecione</option>
+                       <option>Goleiro</option>
+                       <option>Zagueiro</option>
+                       <option>Lateral</option>
+                       <option>Volante</option>
+                       <option>Armador</option>
+                       <option>Ponta</option>
+                       <option>Centroavante</option>
+                    </select> 
+                </div>
+                <br>
+
+                <div class="forma_contato">
+                    <p><strong>Qual forma de contato você prefere?</strong></p>
+                    <input type="radio" id="whatsapp" name="contato" value="whatsapp" checked required>
+                    <label for="whatsapp">Whatsapp</label><br>
+                    <input type="radio" id="ligacao" name="contato" value="ligacao" required>
+                    <label for="ligacao">Ligação de voz</label><br>
+                    <input type="radio" id="contato_email" name="contato" value="contato_email" required>
+                    <label for="whatsapp">Email</label><br>
+                </div>
+                
+                <br>
+                <input type="submit" name="submit" id="botao_submit" value="Enviar">           
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
